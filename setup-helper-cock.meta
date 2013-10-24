@@ -1,0 +1,7 @@
+((synopsis "Utilities for running documentation")
+ (author "Peter Danenberg")
+ (category doc-tools)
+ (license "BSD")
+ (depends)
+ (test-depends)
+ (foreign-depends))

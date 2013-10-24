@@ -1,0 +1,7 @@
+(compile -d0 -O2 -J -s setup-helper-cock.scm)
+(compile -d0 -O2 -s setup-helper-cock.import.scm)
+
+(install-extension
+ 'setup-helper-cock
+ '("setup-helper-cock.so" "setup-helper-cock.import.so")
+ '((version "0.0.1")))
