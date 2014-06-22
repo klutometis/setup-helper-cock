@@ -1,7 +1,6 @@
-(compile -d0 -O2 -J -s setup-helper-cock.scm)
-(compile -d0 -O2 -s setup-helper-cock.import.scm)
-
-(install-extension
- 'setup-helper-cock
- '("setup-helper-cock.so" "setup-helper-cock.import.so")
- '((version "0.0.1")))
+;; By analogy with setup-helper
+(handle-exceptions exn
+  (warning "Cannot copy to Chicken Home: must use CHICKEN_INCLUDE_PATH
+when documenting an egg using \"cock\".")
+  (when (setup-install-mode)
+    (copy-file "setup-helper-cock.scm" (chicken-home))))
