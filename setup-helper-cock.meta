@@ -1,6 +1,6 @@
-((synopsis "Utilities for running documentation")
+((synopsis "Obsolete; cock suffices.")
  (author "Peter Danenberg")
- (category doc-tools)
+ (category obsolete)
  (license "BSD")
  (depends)
  (test-depends)
